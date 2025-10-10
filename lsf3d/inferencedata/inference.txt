@@ -2,4 +2,4 @@ python lsf3d/inference_synapse.py fold_0
 
 python lsf3d/inference_acdc.py fold_0
 
-python lsf3d/inference_tumor.py fold_0
+python lsf3d/inference_tumor.py fold_5
