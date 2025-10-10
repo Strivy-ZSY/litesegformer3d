@@ -8,7 +8,7 @@ export unetr_pp_preprocessed="$DATASET_PATH"/unetr_pp_raw/unetr_pp_raw_data/Task
 export unetr_pp_raw_data_base="$DATASET_PATH"/unetr_pp_raw
 
 # train
-python unetr_pp/run/run_training.py 3d_fullres segformer3d_trainer_synapse 2 0
+python unetr_pp/run/run_training.py 3d_fullres litesegformer3d_trainer_synapse 2 0
 
 # inference
-# python unetr_pp/run/run_training.py 3d_fullres segformer3d_trainer_synapse 2 0 --valbest --validation_only
+# python unetr_pp/run/run_training.py 3d_fullres litesegformer3d_trainer_synapse 2 0 --valbest --validation_only
