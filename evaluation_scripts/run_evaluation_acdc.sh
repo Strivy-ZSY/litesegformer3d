@@ -1,11 +1,11 @@
 #!/bin/sh
 
 DATASET_PATH=../DATASET_Acdc
-CHECKPOINT_PATH=unetr_pp/evaluation/unetr_pp_acdc_checkpoint
+CHECKPOINT_PATH=lsf3d/evaluation/lsf3d_acdc_checkpoint
 
 export PYTHONPATH=.././
 export RESULTS_FOLDER="$CHECKPOINT_PATH"
-export unetr_pp_preprocessed="$DATASET_PATH"/unetr_pp_raw/unetr_pp_raw_data/Task01_ACDC
-export unetr_pp_raw_data_base="$DATASET_PATH"/unetr_pp_raw
+export lsf3d_preprocessed="$DATASET_PATH"/lsf3d_raw/lsf3d_raw_data/Task01_ACDC
+export lsf3d_raw_data_base="$DATASET_PATH"/lsf3d_raw
 
-python unetr_pp/run/run_training.py 3d_fullres segformer3d_trainer_acdc 1 0 --valbest --validation_only
+python lsf3d/run/run_training.py 3d_fullres segformer3d_trainer_acdc 1 0 --valbest --validation_only
