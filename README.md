@@ -1,2 +1,3 @@
-# LiteSegFormer3D
-A lightweight and efficient medical image segmentation model.🤗
+# LiteSegFormer3D: An Efficient and Lightweight Segmentation Model for 3D Medical Images
+
+
