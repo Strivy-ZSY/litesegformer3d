@@ -1,0 +1,573 @@
+********************
+patient002_frame01.nii.gz
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+patient002_frame01.nii.gz
+Dice_rv: 0.9563
+Dice_myo: 0.8739
+Dice_lv: 0.9523
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+********************
+patient002_frame12.nii.gz
+hd_rv: 1.4142
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+patient002_frame12.nii.gz
+Dice_rv: 0.7242
+Dice_myo: 0.9045
+Dice_lv: 0.9601
+hd_rv: 1.4142
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+********************
+patient003_frame01.nii.gz
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+patient003_frame01.nii.gz
+Dice_rv: 0.9375
+Dice_myo: 0.9178
+Dice_lv: 0.9779
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+********************
+patient003_frame15.nii.gz
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+patient003_frame15.nii.gz
+Dice_rv: 0.9261
+Dice_myo: 0.9182
+Dice_lv: 0.9730
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+********************
+patient008_frame01.nii.gz
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+patient008_frame01.nii.gz
+Dice_rv: 0.9605
+Dice_myo: 0.8993
+Dice_lv: 0.9746
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+********************
+patient008_frame13.nii.gz
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+patient008_frame13.nii.gz
+Dice_rv: 0.9178
+Dice_myo: 0.9051
+Dice_lv: 0.9689
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+********************
+patient009_frame01.nii.gz
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+patient009_frame01.nii.gz
+Dice_rv: 0.8846
+Dice_myo: 0.9168
+Dice_lv: 0.9762
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+********************
+patient009_frame13.nii.gz
+hd_rv: 2.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+patient009_frame13.nii.gz
+Dice_rv: 0.8276
+Dice_myo: 0.9234
+Dice_lv: 0.9736
+hd_rv: 2.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+********************
+patient012_frame01.nii.gz
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+patient012_frame01.nii.gz
+Dice_rv: 0.9253
+Dice_myo: 0.8770
+Dice_lv: 0.9756
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+********************
+patient012_frame13.nii.gz
+hd_rv: 2.8284
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+patient012_frame13.nii.gz
+Dice_rv: 0.7617
+Dice_myo: 0.8592
+Dice_lv: 0.9413
+hd_rv: 2.8284
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+********************
+patient014_frame01.nii.gz
+hd_rv: 2.0000
+hd_myo: 2.2361
+hd_lv: 2.0000
+********************
+patient014_frame01.nii.gz
+Dice_rv: 0.8061
+Dice_myo: 0.7680
+Dice_lv: 0.8824
+hd_rv: 2.0000
+hd_myo: 2.2361
+hd_lv: 2.0000
+********************
+********************
+patient014_frame13.nii.gz
+hd_rv: 2.0000
+hd_myo: 2.0000
+hd_lv: 2.0000
+********************
+patient014_frame13.nii.gz
+Dice_rv: 0.8871
+Dice_myo: 0.7913
+Dice_lv: 0.9019
+hd_rv: 2.0000
+hd_myo: 2.0000
+hd_lv: 2.0000
+********************
+********************
+patient017_frame01.nii.gz
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+patient017_frame01.nii.gz
+Dice_rv: 0.9632
+Dice_myo: 0.8649
+Dice_lv: 0.9726
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+********************
+patient017_frame09.nii.gz
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+patient017_frame09.nii.gz
+Dice_rv: 0.9641
+Dice_myo: 0.9013
+Dice_lv: 0.9754
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+********************
+patient024_frame01.nii.gz
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+patient024_frame01.nii.gz
+Dice_rv: 0.9439
+Dice_myo: 0.9146
+Dice_lv: 0.9609
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+********************
+patient024_frame09.nii.gz
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+patient024_frame09.nii.gz
+Dice_rv: 0.9107
+Dice_myo: 0.9437
+Dice_lv: 0.9150
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+********************
+patient042_frame01.nii.gz
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+patient042_frame01.nii.gz
+Dice_rv: 0.9602
+Dice_myo: 0.8888
+Dice_lv: 0.9744
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+********************
+patient042_frame16.nii.gz
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+patient042_frame16.nii.gz
+Dice_rv: 0.8543
+Dice_myo: 0.8868
+Dice_lv: 0.9604
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+********************
+patient048_frame01.nii.gz
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+patient048_frame01.nii.gz
+Dice_rv: 0.9044
+Dice_myo: 0.8782
+Dice_lv: 0.9572
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+********************
+patient048_frame08.nii.gz
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+patient048_frame08.nii.gz
+Dice_rv: 0.8984
+Dice_myo: 0.9047
+Dice_lv: 0.9533
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+********************
+patient049_frame01.nii.gz
+hd_rv: 1.4142
+hd_myo: 1.4142
+hd_lv: 1.0000
+********************
+patient049_frame01.nii.gz
+Dice_rv: 0.8524
+Dice_myo: 0.8242
+Dice_lv: 0.8957
+hd_rv: 1.4142
+hd_myo: 1.4142
+hd_lv: 1.0000
+********************
+********************
+patient049_frame11.nii.gz
+hd_rv: 7.6811
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+patient049_frame11.nii.gz
+Dice_rv: 0.4826
+Dice_myo: 0.8632
+Dice_lv: 0.9116
+hd_rv: 7.6811
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+********************
+patient053_frame01.nii.gz
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+patient053_frame01.nii.gz
+Dice_rv: 0.9512
+Dice_myo: 0.9187
+Dice_lv: 0.9754
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+********************
+patient053_frame12.nii.gz
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+patient053_frame12.nii.gz
+Dice_rv: 0.9163
+Dice_myo: 0.9090
+Dice_lv: 0.9683
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+********************
+patient055_frame01.nii.gz
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+patient055_frame01.nii.gz
+Dice_rv: 0.9344
+Dice_myo: 0.8856
+Dice_lv: 0.9585
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+********************
+patient055_frame10.nii.gz
+hd_rv: 2.2361
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+patient055_frame10.nii.gz
+Dice_rv: 0.7761
+Dice_myo: 0.9043
+Dice_lv: 0.9492
+hd_rv: 2.2361
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+********************
+patient064_frame01.nii.gz
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+patient064_frame01.nii.gz
+Dice_rv: 0.9661
+Dice_myo: 0.9219
+Dice_lv: 0.9675
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+********************
+patient064_frame12.nii.gz
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+patient064_frame12.nii.gz
+Dice_rv: 0.9275
+Dice_myo: 0.9285
+Dice_lv: 0.9356
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+********************
+patient067_frame01.nii.gz
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+patient067_frame01.nii.gz
+Dice_rv: 0.9475
+Dice_myo: 0.8709
+Dice_lv: 0.9661
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+********************
+patient067_frame10.nii.gz
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+patient067_frame10.nii.gz
+Dice_rv: 0.9518
+Dice_myo: 0.9257
+Dice_lv: 0.9534
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+********************
+patient079_frame01.nii.gz
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+patient079_frame01.nii.gz
+Dice_rv: 0.9607
+Dice_myo: 0.9403
+Dice_lv: 0.9762
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+********************
+patient079_frame11.nii.gz
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+patient079_frame11.nii.gz
+Dice_rv: 0.9116
+Dice_myo: 0.9401
+Dice_lv: 0.9442
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+********************
+patient081_frame01.nii.gz
+hd_rv: 6.1644
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+patient081_frame01.nii.gz
+Dice_rv: 0.8358
+Dice_myo: 0.8462
+Dice_lv: 0.9673
+hd_rv: 6.1644
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+********************
+patient081_frame07.nii.gz
+hd_rv: 5.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+patient081_frame07.nii.gz
+Dice_rv: 0.8155
+Dice_myo: 0.8851
+Dice_lv: 0.9062
+hd_rv: 5.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+********************
+patient088_frame01.nii.gz
+hd_rv: 2.2361
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+patient088_frame01.nii.gz
+Dice_rv: 0.9023
+Dice_myo: 0.8322
+Dice_lv: 0.9609
+hd_rv: 2.2361
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+********************
+patient088_frame12.nii.gz
+hd_rv: 3.0000
+hd_myo: 1.4142
+hd_lv: 1.0000
+********************
+patient088_frame12.nii.gz
+Dice_rv: 0.7796
+Dice_myo: 0.8263
+Dice_lv: 0.8907
+hd_rv: 3.0000
+hd_myo: 1.4142
+hd_lv: 1.0000
+********************
+********************
+patient092_frame01.nii.gz
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+patient092_frame01.nii.gz
+Dice_rv: 0.9600
+Dice_myo: 0.8808
+Dice_lv: 0.9691
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+********************
+patient092_frame06.nii.gz
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+patient092_frame06.nii.gz
+Dice_rv: 0.9408
+Dice_myo: 0.9265
+Dice_lv: 0.9394
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+********************
+patient095_frame01.nii.gz
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+patient095_frame01.nii.gz
+Dice_rv: 0.9690
+Dice_myo: 0.8468
+Dice_lv: 0.9700
+hd_rv: 1.0000
+hd_myo: 1.0000
+hd_lv: 1.0000
+********************
+********************
+patient095_frame12.nii.gz
+hd_rv: 1.0000
+hd_myo: 1.4142
+hd_lv: 1.4142
+********************
+patient095_frame12.nii.gz
+Dice_rv: 0.9247
+Dice_myo: 0.8626
+Dice_lv: 0.9160
+hd_rv: 1.0000
+hd_myo: 1.4142
+hd_lv: 1.4142
+********************
+********************
+Mean_Dice
+Dice_rv0.8905018884344568
+Dice_myo0.8869068667997686
+Dice_lv0.9512032425467197
+Mean_HD
+HD_rv1.6493637488832387
+HD_myo1.086967716615477
+HD_lv1.0603553390593272
+********************
+avg_hd:1.2655622681860144
+DSC:0.9095373325936483
+HD:1.2655622681860144
