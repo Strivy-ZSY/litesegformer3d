@@ -34,9 +34,7 @@ def process_label(label):
     ET=et
     TC=net+et
     WT=net+et+ed
-    ED= ed
-    NET=net
-    return ET,TC,WT,ED,NET
+    return ET,TC,WT
 
 def test(fold):
     
@@ -49,14 +47,11 @@ def test(fold):
     Dice_et=[]
     Dice_tc=[]
     Dice_wt=[]
-    Dice_ed=[]
-    Dice_net=[]
 
     HD_et=[]
     HD_tc=[]
     HD_wt=[]
-    HD_ed=[]
-    HD_net=[]
+
     file=infer_path + 'inferTs/'+fold
     if not os.path.exists(file):
         os.makedirs(file)
@@ -66,19 +61,15 @@ def test(fold):
         print(label_path.split('/')[-1])
         print(infer_path.split('/')[-1])
         label,infer = read_nii(label_path),read_nii(infer_path)
-        label_et,label_tc,label_wt,label_ed,label_net=process_label(label)
-        infer_et,infer_tc,infer_wt,infer_ed,infer_net=process_label(infer)
+        label_et,label_tc,label_wt=process_label(label)
+        infer_et,infer_tc,infer_wt=process_label(infer)
         Dice_et.append(dice(infer_et,label_et))
         Dice_tc.append(dice(infer_tc,label_tc))
         Dice_wt.append(dice(infer_wt,label_wt))
-        Dice_ed.append(dice(infer_ed,label_ed))
-        Dice_net.append(dice(infer_net,label_net))
 
         HD_et.append(hd(infer_et,label_et))
         HD_tc.append(hd(infer_tc,label_tc))
         HD_wt.append(hd(infer_wt,label_wt))
-        HD_ed.append(hd(infer_ed,label_ed))
-        HD_net.append(hd(infer_net,label_net))
 
 
         fw.write('*'*20+'\n',)
@@ -86,41 +77,29 @@ def test(fold):
         fw.write('hd_et: {:.4f}\n'.format(HD_et[-1]))
         fw.write('hd_tc: {:.4f}\n'.format(HD_tc[-1]))
         fw.write('hd_wt: {:.4f}\n'.format(HD_wt[-1]))
-        fw.write('hd_ed: {:.4f}\n'.format(HD_ed[-1]))
-        fw.write('hd_net: {:.4f}\n'.format(HD_net[-1]))
         fw.write('*'*20+'\n',)
         fw.write('Dice_et: {:.4f}\n'.format(Dice_et[-1]))
         fw.write('Dice_tc: {:.4f}\n'.format(Dice_tc[-1]))
         fw.write('Dice_wt: {:.4f}\n'.format(Dice_wt[-1]))
-        fw.write('Dice_ed: {:.4f}\n'.format(Dice_ed[-1]))
-        fw.write('Dice_net: {:.4f}\n'.format(Dice_net[-1]))
 
     dsc=[]
     avg_hd=[]
     dsc.append(np.mean(Dice_et))
     dsc.append(np.mean(Dice_tc))
     dsc.append(np.mean(Dice_wt))
-    dsc.append(np.mean(Dice_ed))
-    dsc.append(np.mean(Dice_net))
 
 
     avg_hd.append(np.mean(HD_et))
     avg_hd.append(np.mean(HD_tc))
     avg_hd.append(np.mean(HD_wt))
-    avg_hd.append(np.mean(HD_ed))
-    avg_hd.append(np.mean(HD_net))
 
     fw.write('Dice_et'+str(np.mean(Dice_et))+' '+'\n')
     fw.write('Dice_tc'+str(np.mean(Dice_tc))+' '+'\n')
     fw.write('Dice_wt'+str(np.mean(Dice_wt))+' '+'\n')
-    fw.write('Dice_ed'+str(np.mean(Dice_ed))+' '+'\n')
-    fw.write('Dice_net'+str(np.mean(Dice_net))+' '+'\n')
 
     fw.write('HD_et'+str(np.mean(HD_et))+' '+'\n')
     fw.write('HD_tc'+str(np.mean(HD_tc))+' '+'\n')
     fw.write('HD_wt'+str(np.mean(HD_wt))+' '+'\n')
-    fw.write('HD_ed'+str(np.mean(HD_ed))+' '+'\n')
-    fw.write('HD_net'+str(np.mean(HD_net))+' '+'\n')
 
     fw.write('Dice'+str(np.mean(dsc))+' '+'\n')
     fw.write('HD'+str(np.mean(avg_hd))+' '+'\n')
@@ -135,3 +114,4 @@ if __name__ == '__main__':
     args = parser.parse_args()
     fold=args.fold
     test(fold)
+
