@@ -37,7 +37,7 @@ from lsf3d.network_architecture.litesegformer3d_synapse import LiteSegFormer3D
 from fvcore.nn import FlopCountAnalysis
 
 
-class segformer3d_trainer_synapse(Trainer_synapse):
+class litesegformer3d_trainer_synapse(Trainer_synapse):
     """
     same as internal nnFromerTrinerV2 and nnUNetTrainerV2_2
     """
