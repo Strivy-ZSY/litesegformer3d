@@ -192,9 +192,7 @@ class litesegformer3d_trainer_acdc(Trainer_acdc):
                         device=next(self.network.parameters()).device)
         flops = FlopCountAnalysis(self.network, input)
         model_flops = flops.total()
-        print(f"Total trainable parameters: {round(n_parameters * 1e-6, 2)} M")
         print(f"MAdds: {round(model_flops * 1e-9, 2)} G")
-        # from torchsummary import summary
 
         # 计算网络统计信息
         n_parameters = sum(p.numel() for p in self.network.parameters() if p.requires_grad)
