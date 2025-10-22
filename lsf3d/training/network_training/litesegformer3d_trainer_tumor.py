@@ -202,7 +202,6 @@ class litesegformer3d_trainer_tumor(Trainer_tumor):
                                          device=next(self.network.parameters()).device)
         flops = FlopCountAnalysis(self.network, input)
         model_flops = flops.total()
-        print(f"Total trainable parameters: {round(n_parameters * 1e-6, 2)} M")
         print(f"MAdds: {round(model_flops * 1e-9, 2)} G")
 
     def initialize_optimizer_and_scheduler(self):
