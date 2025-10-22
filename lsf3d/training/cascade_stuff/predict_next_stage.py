@@ -112,10 +112,10 @@ if __name__ == "__main__":
 
     trainer_class = recursive_find_python_class([join(lsf3d.__path__[0], "training", "network_training")],
                                                 trainerclass,
-                                                "litesegformer3d.training.network_training")
+                                                "lsf3d.training.network_training")
 
     if trainer_class is None:
-        raise RuntimeError("Could not find trainer class in litesegformer3d.training.network_training")
+        raise RuntimeError("Could not find trainer class in lsf3d.training.network_training")
     else:
         assert issubclass(trainer_class,
                           Trainer_acdc), "network_trainer was found but is not derived from nnFormerTrainer"
