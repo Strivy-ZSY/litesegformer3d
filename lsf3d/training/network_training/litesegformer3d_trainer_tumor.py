@@ -37,7 +37,7 @@ from batchgenerators.utilities.file_and_folder_operations import *
 from fvcore.nn import FlopCountAnalysis
 
 
-class segformer3d_trainer_tumor(Trainer_tumor):
+class litesegformer3d_trainer_tumor(Trainer_tumor):
     """
     same as internal nnFromerTrinerV2 and nnUNetTrainerV2_2
     """
