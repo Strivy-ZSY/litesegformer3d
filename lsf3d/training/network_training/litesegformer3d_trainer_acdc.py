@@ -37,7 +37,7 @@ from lsf3d.network_architecture.litesegformer3d_acdc import LiteSegFormer3D
 from fvcore.nn import FlopCountAnalysis
 
 
-class segformer3d_trainer_acdc(Trainer_acdc):
+class litesegformer3d_trainer_acdc(Trainer_acdc):
     """
     Info for Fabian: same as internal nnUNetTrainerV2_2
     """
