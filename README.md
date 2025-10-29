@@ -2,6 +2,7 @@
 
 
 ## 1. Overview
+<img src="./img/LiteSegFormer3D.svg" />
 
 ## 2. Installation
 
