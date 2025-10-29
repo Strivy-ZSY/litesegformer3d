@@ -1,6 +1,7 @@
 # LiteSegFormer3D：一种高效轻量的三维医学图像分割模型
 
 ## 1. 概述
+<img src="./img/LiteSegFormer3D.svg" />
 
 ## 2. 安装
 
