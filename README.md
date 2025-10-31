@@ -40,19 +40,31 @@ pip install -r requirements.txt
 ## 5. 评估
 
 ### 5.1 BraTS 2017
-
-<img width="611" height="300" alt="image" src="https://github.com/user-attachments/assets/1eb0ca52-af34-426d-b693-cba5d0a3dcdf" />
-<img src="./img/BraTS.svg" />
+BraTS 2017是大脑脑瘤MRI数据集
+<p align="center">
+  <div style="position: relative; display: inline-block;">
+    <img src="./img/BraTS.svg" alt="Wide Image" width="400" style="display: block;">
+    <img src="https://github.com/user-attachments/assets/1eb0ca52-af34-426d-b693-cba5d0a3dcdf" alt="Narrow Image" width="400" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+  </div>
+</p>
 
 ### 5.2 ACDC
-
-<img width="1746" height="791" alt="image" src="https://github.com/user-attachments/assets/f42a255d-5a21-4c1d-9da5-d4881d11f2aa" />
-<img src="./img/ACDC.svg" />
+ACDC是心脏器官分割MRI数据集
+<p align="center">
+  <div style="position: relative; display: inline-block;">
+    <img src="./img/ACDC.svg" alt="Wide Image" width="400" style="display: block;">
+    <img src="https://github.com/user-attachments/assets/028f9314-7344-4f61-bec8-9592a1064d1f" alt="Narrow Image" width="400" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+  </div>
+</p>
 
 ### 5.3 Synapse
-
-<img width="1449" height="827" alt="image" src="https://github.com/user-attachments/assets/2e276e44-c1a8-4498-b299-d22da4b32ce3" />
-<img src="./img/Synapse.svg" />
+Synapse是腹部多器官分割CT数据集
+<p align="center">
+  <div style="position: relative; display: inline-block;">
+    <img src="./img/Synapse.svg" alt="Wide Image" width="400" style="display: block;">
+    <img src="https://github.com/user-attachments/assets/2e276e44-c1a8-4498-b299-d22da4b32ce3" alt="Narrow Image" width="400" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+  </div>
+</p>
 
 ## 6. 致谢
 
