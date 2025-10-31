@@ -33,11 +33,31 @@ pip install -r requirements.txt
 我们使用的数据分别是[BraTs](https://www.med.upenn.edu/sbia/brats2017/data.html)、[Synapse](https://www.synapse.org/#!Synapse:syn3193805/wiki/217789)和[ACDC](https://www.creatis.insa-lyon.fr/Challenge/acdc/databases.html)
 您可以参照[nnFormer](https://github.com/282857341/nnFormer)中数据的预处理方式，或者您也可以从[Google Drive]()直接下载预处理好的数据(我们推荐您这样做，可以节省很多时间🙂)
 
+将您下载的结果存放在`litesegformer3d`文件夹下，以`BraTS`数据为例，划分方式如下（如果您从我们提供的链接下载，则直接解压即可）：
+```
+./DATASET_Tumor/
+  ├── litesegformer3d_raw/
+      ├── litesegformer3d_raw_data/
+           ├── Task03_tumor/
+              ├── imagesTr/
+              ├── imagesTs/
+              ├── labelsTr/
+              ├── labelsTs/
+              ├── dataset.json
+           ├── Task003_tumor
+       ├── litesegformer3d_cropped_data/
+           ├── Task003_tumor
+```
+
 ## 4. 训练
 
 运行`run_scripts`文件夹下的脚本即可，在后续推理中，您只需注释掉脚本中的`train`命令，启用`inference`命令即可。
 
 ## 5. 评估
+
+`lsf3d/inferencedata`文件夹下是我们的评估结果和对应的推理得到的测试集结果，如果您想自行推理得到对应的测试结果，请修改`lsf3d`文件夹下的`inference_xxx.py`的测试路径为您的推理测试集存放路径。
+同时，测试集的具体划分您可以参照[nnFormer](https://github.com/282857341/nnFormer/blob/main/nnformer/dataset_json/)的划分方式,同时您需要修改[训练代码](https://github.com/Strivy-ZSY/litesegformer3d/tree/main/lsf3d/training/network_training)中对应的`litesegformer3d_tranier_xxx.py`文件中的`splits[self.fold]['val']`的值为对应的测试集列表。
+
 
 ### 5.1 BraTS 2017
 BraTS 2017是大脑脑瘤MRI数据集
