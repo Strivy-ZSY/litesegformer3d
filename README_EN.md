@@ -71,7 +71,7 @@ BraTS 2017 is an MRI dataset of brain tumors
 </p>
 
 ### 5.2 ACDC
-ACDC is a cardiac organ segmentation MRI dataset
+ACDC is a cardiac organ segmentation MRI dataset(The metrics of SegFormer here are obtained from our actual measurements.)
 <p align="center">
   <div style="position: relative; display: inline-block;">
     <img src="./img/ACDC.svg" alt="Wide Image" width="400" style="display: block;">
