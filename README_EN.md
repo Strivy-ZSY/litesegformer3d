@@ -32,9 +32,12 @@ pip install -r requirements.txt
 
 ## 3. Dataset
 
-The datasets we used are [BraTs](https://www.med.upenn.edu/sbia/brats2017/data.html), [Synapse](https://www.synapse.org/#!Synapse:syn3193805/wiki/217789), and [ACDC](https://www.creatis.insa-lyon.fr/Challenge/acdc/databases.html). You can refer to the data preprocessing method in [nnFormer](https://github.com/282857341/nnFormer), or you can directly download the preprocessed data from [Google Drive]() (we recommend doing this to save a lot of time 🙂).
+The datasets we are using are [BraTs](https://www.med.upenn.edu/sbia/brats2017/data.html), [Synapse](https://www.synapse.org/#!Synapse:syn3193805/wiki/217789), and [ACDC](https://www.creatis.insa-lyon.fr/Challenge/acdc/databases.html).  
 
-Store your downloaded results in the `litesegformer3d` folder. Taking the `BraTS` data as an example, the division is as follows (if you downloaded from our provided link, simply extract it directly):
+You can refer to the data preprocessing method in [nnFormer](https://github.com/282857341/nnFormer), or you can directly download the preprocessed data for [Synapse](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/abdelrahman_youssief_mbzuai_ac_ae/EbHDhSjkQW5Ak9SMPnGCyb8BOID98wdg3uUvQ0eNvTZ8RA?e=YVhfdg), [ACDC](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/abdelrahman_youssief_mbzuai_ac_ae/EY9qieTkT3JFrhCJQiwZXdsB1hJ4ebVAtNdBNOs2HAo3CQ?e=VwfFHC), and [BRaTs](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/abdelrahman_youssief_mbzuai_ac_ae/EaQOxpD2yE5Btl-UEBAbQa0BYFBCL4J2Ph-VF_sqZlBPSQ?e=DFY41h). (These preprocessed datasets are from [UNETR++](https://github.com/Amshaker/unetr_plus_plus), but you need to rename the corresponding files from `unetr_pp` to `litesegformer3d`. Also, please remember to check whether the naming in the `Task003_tumor` folder under the `litesegformer3d_raw_data` directory has been modified. We recommend doing this, as it can save a lot of time 🙂. Once again, thanks to `UNETR++` ❤️.)
+
+Store your downloaded results in the `litesegformer3d` folder. Taking the `BraTS` data as an example, the renamed folder structure is divided as follows:
+
 ```
 ./DATASET_Tumor/
   ├── litesegformer3d_raw/
