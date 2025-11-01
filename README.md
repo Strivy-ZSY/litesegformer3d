@@ -69,7 +69,7 @@ BraTS 2017是大脑脑瘤MRI数据集
 </p>
 
 ### 5.2 ACDC
-ACDC是心脏器官分割MRI数据集
+ACDC是心脏器官分割MRI数据集(此处的SegFormer的指标是我们实测得到的)
 <p align="center">
   <div style="position: relative; display: inline-block;">
     <img src="./img/ACDC.svg" alt="Wide Image" width="400" style="display: block;">
