@@ -30,8 +30,8 @@ pip install -r requirements.txt
 ```
 
 ## 3. 数据集
-我们使用的数据分别是[BraTs](https://www.med.upenn.edu/sbia/brats2017/data.html)、[Synapse](https://www.synapse.org/#!Synapse:syn3193805/wiki/217789)和[ACDC](https://www.creatis.insa-lyon.fr/Challenge/acdc/databases.html)
-您可以参照[nnFormer](https://github.com/282857341/nnFormer)中数据的预处理方式，或者您也可以直接下载[Synapse](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/abdelrahman_youssief_mbzuai_ac_ae/EbHDhSjkQW5Ak9SMPnGCyb8BOID98wdg3uUvQ0eNvTZ8RA?e=YVhfdg), [ACDC](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/abdelrahman_youssief_mbzuai_ac_ae/EY9qieTkT3JFrhCJQiwZXdsB1hJ4ebVAtNdBNOs2HAo3CQ?e=VwfFHC), [BRaTs](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/abdelrahman_youssief_mbzuai_ac_ae/EaQOxpD2yE5Btl-UEBAbQa0BYFBCL4J2Ph-VF_sqZlBPSQ?e=DFY41h)预处理好的数据(该数据集预处理文件来自[UNETR++](https://github.com/Amshaker/unetr_plus_plus)，但您需要将对应的文件命名由`unetr_pp`改为`litesegformer3d`，同时，请记得检查`litesegformer3d_raw_data`目录下的`Task003_tumor`文件夹下的命名是否修改。我们推荐您这样做，可以节省很多时间🙂，再次感谢`UNETR++`❤️)
+我们使用的数据分别是[BraTS](https://www.med.upenn.edu/sbia/brats2017/data.html)、[Synapse](https://www.synapse.org/#!Synapse:syn3193805/wiki/217789)和[ACDC](https://www.creatis.insa-lyon.fr/Challenge/acdc/databases.html)
+您可以参照[nnFormer](https://github.com/282857341/nnFormer)中数据的预处理方式，或者您也可以直接下载[Synapse](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/abdelrahman_youssief_mbzuai_ac_ae/EbHDhSjkQW5Ak9SMPnGCyb8BOID98wdg3uUvQ0eNvTZ8RA?e=YVhfdg), [ACDC](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/abdelrahman_youssief_mbzuai_ac_ae/EY9qieTkT3JFrhCJQiwZXdsB1hJ4ebVAtNdBNOs2HAo3CQ?e=VwfFHC), [BRaTS](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/abdelrahman_youssief_mbzuai_ac_ae/EaQOxpD2yE5Btl-UEBAbQa0BYFBCL4J2Ph-VF_sqZlBPSQ?e=DFY41h)预处理好的数据(该数据集预处理文件来自[UNETR++](https://github.com/Amshaker/unetr_plus_plus)，但您需要将对应的文件命名由`unetr_pp`改为`litesegformer3d`，同时，请记得检查`litesegformer3d_raw_data`目录下的`Task003_tumor`文件夹下的命名是否修改。我们推荐您这样做，可以节省很多时间🙂，再次感谢`UNETR++`❤️)
 
 将您下载的结果存放在`litesegformer3d`文件夹下，以`BraTS`数据为例，重命名后的文件夹结构划分如下：
 ```
