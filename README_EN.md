@@ -91,4 +91,4 @@ Synapse is a CT dataset for multi-organ segmentation in the abdomen
 Our implementation is based on the [PyTorch](https://github.com/pytorch/pytorch) framework. The dataset preprocessing refers to the work of [nnFormer](https://github.com/282857341/nnFormer) and [UNETR++](https://github.com/Amshaker/unetr_plus_plus). The code construction draws on the work of [nnUNet](https://github.com/MIC-DKFZ/nnUNet), [FastKAN](https://github.com/ZiyaoLi/fast-kan), [ACNet](https://github.com/DingXiaoH/ACNet), and [Mona](https://github.com/LeiyiHU/mona). The baseline model implementation refers to the work of [SegFormer3D](https://github.com/OSUPCVLab/SegFormer3D). Additionally, we adopted the writing style of [TiM4Rec](https://github.com/AlwaysFHao/TiM4Rec) for composing the Readme documentation.
 
 ## 7. Citation
-Under expert review, will provide updates later 🙂
+Expert review in progress, to be provided subsequently🙂.
