@@ -34,7 +34,7 @@ pip install -r requirements.txt
 
 The datasets we use are [BraTS](https://www.med.upenn.edu/sbia/brats2017/data.html), [Synapse](https://www.synapse.org/#!Synapse:syn3193805/wiki/217789), and [ACDC](https://www.creatis.insa-lyon.fr/Challenge/acdc/databases.html). You can refer to the data preprocessing method in [nnFormer](https://github.com/282857341/nnFormer), or you can directly download the preprocessed data from [DATASET](https://sourceforge.net/projects/litesegformer3d/files/)(We recommend doing so to save a lot of time 🙂).
 
-Save your downloaded results in the `litesegformer3d` folder. Using the `BraTS` data as an example, the folder structure is organized as follows:
+Save your downloaded results in the `litesegformer3d` folder. Using the `BraTS` dataset as an example, the folder structure is organized as follows:
 
 ```
 ./DATASET_Tumor/
