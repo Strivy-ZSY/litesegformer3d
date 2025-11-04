@@ -56,6 +56,7 @@ pip install -r requirements.txt
 ## 5. 评估
 
 `lsf3d/inferencedata`文件夹下是我们的评估结果和对应的推理得到的测试集结果，如果您想自行推理得到对应的测试结果，请修改`lsf3d`文件夹下的`inference_xxx.py`的测试路径为您的推理测试集存放路径。
+评估代码运行的指令您可以查看[inference.txt](https://github.com/Strivy-ZSY/litesegformer3d/blob/main/lsf3d/inferencedata/inference.txt)文件。
 同时，**测试集**的具体划分您可以参照[nnFormer](https://github.com/282857341/nnFormer/blob/main/nnformer/dataset_json/)的划分方式,同时您需要修改[训练代码](https://github.com/Strivy-ZSY/litesegformer3d/tree/main/lsf3d/training/network_training)中对应的`litesegformer3d_tranier_xxx.py`文件中的`splits[self.fold]['val']`的值为对应的测试集列表。
 
 
