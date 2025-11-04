@@ -57,7 +57,9 @@ Simply run the scripts in the `run_scripts` folder. For subsequent inference tas
 
 ## 5. Evaluation
 
-The `lsf3d/inferencedata` folder contains our evaluation results and the corresponding inference outcomes for the test set. If you wish to perform your own inference to obtain the test results, please modify the test path in `inference_xxx.py` within the `lsf3d` folder to point to your inference test set storage location. Additionally, you can refer to the [nnFormer](https://github.com/282857341/nnFormer/blob/main/nnformer/dataset_json/) partitioning method for the specific division of the **test set**. You will also need to modify the value of `splits[self.fold]['val']` in the corresponding `litesegformer3d_tranier_xxx.py` file within the [training code](https://github.com/Strivy-ZSY/litesegformer3d/tree/main/lsf3d/training/network_training) to the list of test sets.
+The `lsf3d/inferencedata` folder contains our evaluation results and the corresponding inference outcomes for the test set. If you wish to perform your own inference to obtain the test results, please modify the test path in `inference_xxx.py` within the `lsf3d` folder to point to your inference test set storage location. 
+To evaluate the code execution instructions, you can refer to the [inference.txt](https://github.com/Strivy-ZSY/litesegformer3d/blob/main/lsf3d/inferencedata/inference.txt) file.
+Additionally, you can refer to the [nnFormer](https://github.com/282857341/nnFormer/blob/main/nnformer/dataset_json/) partitioning method for the specific division of the **test set**. You will also need to modify the value of `splits[self.fold]['val']` in the corresponding `litesegformer3d_tranier_xxx.py` file within the [training code](https://github.com/Strivy-ZSY/litesegformer3d/tree/main/lsf3d/training/network_training) to the list of test sets.
 
 ### 5.1 BraTS 2017
 BraTS 2017 is an MRI dataset of brain tumors
