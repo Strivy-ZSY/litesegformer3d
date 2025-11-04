@@ -5,7 +5,7 @@
 ## 1. Overview
 <img src="./img/LiteSegFormer3D.svg" />
 
-Based on SegFormer3D, we designed a lightweight and efficient medical image segmentation network called **LiteSegFormer3D**, which improves segmentation accuracy while reducing training time by one-third to one-half across three datasets. By introducing a novel feedforward processing method to accelerate training, employing an attention mechanism with Gaussian kernel functions to reduce parameter size and enhance spatial texture fitting, and combining asymmetric convolutions for shallow feature extraction with dynamic normalization to expedite convergence, we have achieved an efficient and precise segmentation algorithm.
+We designed LiteSegFormer3D, a lightweight and efficient medical image segmentation network based on SegFormer3D. It improves segmentation accuracy while reducing training time by one-third to one-half across three datasets. By introducing novel feedforward processing to accelerate training, employing a Gaussian kernel attention mechanism to reduce parameter size while enhancing spatial texture fitting, and combining asymmetric convolutions for shallow feature extraction with dynamic normalization to speed up convergence, we achieve an efficient and accurate segmentation algorithm.
 
 ## 2. Installation
 
@@ -53,11 +53,11 @@ Store your downloaded results in the `litesegformer3d` folder. Taking the `BraTS
 
 ## 4. Training
 
-To run the scripts in the `run_scripts` folder, simply comment out the `train` command in the script and enable the `inference` command for subsequent reasoning.
+Simply run the scripts in the `run_scripts` folder. For subsequent inference tasks, you only need to comment out the `train` command in the script and enable the `inference` command.
 
 ## 5. Evaluation
 
-The `lsf3d/inferencedata` folder contains our evaluation results and the corresponding inference results on the test set. If you wish to perform inference and obtain the corresponding test results yourself, please modify the test path in the `inference_xxx.py` file under the `lsf3d` folder to the path where your test set for inference is stored. Additionally, for the specific division of the test set, you can refer to the division method of [nnFormer](https://github.com/282857341/nnFormer/blob/main/nnformer/dataset_json/). You will also need to modify the value of `splits[self.fold]['val']` in the corresponding `litesegformer3d_trainer_xxx.py` file in the [training code](https://github.com/Strivy-ZSY/litesegformer3d/tree/main/lsf3d/training/network_training) to match the list of your test set.
+The `lsf3d/inferencedata` folder contains our evaluation results and the corresponding inference outcomes for the test set. If you wish to perform your own inference to obtain the test results, please modify the test path in `inference_xxx.py` within the `lsf3d` folder to point to your inference test set storage location. Additionally, you can refer to the [nnFormer](https://github.com/282857341/nnFormer/blob/main/nnformer/dataset_json/) partitioning method for the specific division of the test set. You will also need to modify the value of `splits[self.fold]['val']` in the corresponding `litesegformer3d_tranier_xxx.py` file within the [training code](https://github.com/Strivy-ZSY/litesegformer3d/tree/main/lsf3d/training/network_training) to the list of test sets.
 
 ### 5.1 BraTS 2017
 BraTS 2017 is an MRI dataset of brain tumors
@@ -88,7 +88,7 @@ Synapse is a CT dataset for multi-organ segmentation in the abdomen
 
 ## 6. Acknowledgments
 
-Our implementation is based on the [PyTorch](https://github.com/pytorch/pytorch) framework. The dataset preprocessing refers to the work of [nnFormer](https://github.com/282857341/nnFormer) and [UNETR++](https://github.com/Amshaker/unetr_plus_plus). The code construction draws on the work of [nnUNet](https://github.com/MIC-DKFZ/nnUNet), [FastKAN](https://github.com/ZiyaoLi/fast-kan), [ACNet](https://github.com/DingXiaoH/ACNet), and [Mona](https://github.com/LeiyiHU/mona). The baseline model implementation refers to the work of [SegFormer3D](https://github.com/OSUPCVLab/SegFormer3D). Additionally, we adopted the writing style of [TiM4Rec](https://github.com/AlwaysFHao/TiM4Rec) for composing the Readme documentation.
+Our implementation is based on the [PyTorch](https://github.com/pytorch/pytorch) framework. For dataset preprocessing, we drew inspiration from the work of [nnFormer](https://github.com/282857341/nnFormer) and [UNETR++](https://github.com/Amshaker/unetr_plus_plus). For code construction, we referenced the work of [nnUNet](https://github.com/MIC-DKFZ/nnUNet), [FastKAN](https://github.com/ZiyaoLi/fast-kan), [ACNet](https://github.com/DingXiaoH/ACNet), and [Mona](https://github.com/LeiyiHU/mona). The baseline model implementation was inspired by [SegFormer3D](https://github.com/OSUPCVLab/SegFormer3D). Additionally, we referenced the work of [TiM4Rec](https://github.com/AlwaysFHao/TiM4Rec) when writing the Readme file.
 
 ## 7. Citation
 Expert review in progress, to be provided subsequently🙂.
