@@ -1,6 +1,6 @@
 #!/bin/sh
 
-DATASET_PATH=../DATASET_Synapse
+DATASET_PATH=DATASET_Synapse
 
 export PYTHONPATH=.././
 export RESULTS_FOLDER=../output_synapse
