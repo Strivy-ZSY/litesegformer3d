@@ -22,7 +22,7 @@ packaging==25.0
 pandas==1.2.3
 Pillow==9.0.0
 portalocker==3.0.0
-protobuf==5.29.4
+protobuf==3.9.2
 pyparsing==3.1.4
 python-dateutil==2.9.0.post0
 pytz==2025.2
@@ -51,5 +51,6 @@ unittest2==1.1.0
 urllib3==2.2.3
 wheel==0.44.0
 yacs==0.1.8
+
 
 
