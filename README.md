@@ -65,7 +65,7 @@ BraTS 2017是大脑脑瘤MRI数据集
 <p align="center">
   <div style="position: relative; display: inline-block;">
     <img src="./img/BraTS.svg" alt="Wide Image" width="400" style="display: block;">
-    <img src="https://github.com/user-attachments/assets/1eb0ca52-af34-426d-b693-cba5d0a3dcdf" alt="Narrow Image" width="400" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+    <img src="./img/brats_label.png" alt="Narrow Image" width="400" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
   </div>
 </p>
 
@@ -74,7 +74,7 @@ ACDC是心脏器官分割MRI数据集(此处的`SegFormer3D`的指标是我们�
 <p align="center">
   <div style="position: relative; display: inline-block;">
     <img src="./img/ACDC.svg" alt="Wide Image" width="400" style="display: block;">
-    <img src="https://github.com/user-attachments/assets/028f9314-7344-4f61-bec8-9592a1064d1f" alt="Narrow Image" width="400" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+    <img src="./img/acdc_label.png" alt="Narrow Image" width="400" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
   </div>
 </p>
 
@@ -83,7 +83,7 @@ Synapse是腹部多器官分割CT数据集
 <p align="center">
   <div style="position: relative; display: inline-block;">
     <img src="./img/Synapse.svg" alt="Wide Image" width="400" style="display: block;">
-    <img src="https://github.com/user-attachments/assets/2e276e44-c1a8-4498-b299-d22da4b32ce3" alt="Narrow Image" width="400" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+    <img src="./img/synapse_label.png" alt="Narrow Image" width="400" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
   </div>
 </p>
 
