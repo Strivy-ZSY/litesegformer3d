@@ -3,7 +3,7 @@
 DATASET_PATH=DATASET_Acdc
 
 export PYTHONPATH=.././
-export RESULTS_FOLDER=../output_acdc
+export RESULTS_FOLDER=output_acdc
 export litesegformer3d_preprocessed="$DATASET_PATH"/litesegformer3d_raw/litesegformer3d_raw_data/Task01_ACDC
 export litesegformer3d_raw_data_base="$DATASET_PATH"/litesegformer3d_raw
 
