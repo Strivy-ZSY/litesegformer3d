@@ -54,6 +54,7 @@ Save your downloaded results in the `litesegformer3d` folder. Using the `BraTS` 
 ## 4. Training
 
 Simply run the scripts in the `run_scripts` folder. For subsequent inference tasks, you only need to comment out the `train` command in the script and enable the `inference` command.
+The results obtained from training will be stored in the `output_xxx` folder under the `litesegformer3d` directory.
 
 ## 5. Evaluation
 
