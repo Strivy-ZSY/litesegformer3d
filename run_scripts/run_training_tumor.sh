@@ -1,6 +1,6 @@
 #!/bin/sh
 
-DATASET_PATH=../DATASET_Tumor
+DATASET_PATH=DATASET_Tumor
 
 export PYTHONPATH=.././
 export RESULTS_FOLDER=../output_tumor
