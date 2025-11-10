@@ -1,6 +1,6 @@
 #!/bin/sh
 
-DATASET_PATH=../DATASET_Acdc
+DATASET_PATH=DATASET_Acdc
 
 export PYTHONPATH=.././
 export RESULTS_FOLDER=../output_acdc
