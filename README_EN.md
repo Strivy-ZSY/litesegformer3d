@@ -66,7 +66,7 @@ BraTS 2017 is an MRI dataset of brain tumors
 <p align="center">
   <div style="position: relative; display: inline-block;">
     <img src="./img/BraTS.svg" alt="Wide Image" width="400" style="display: block;">
-    <img src="https://github.com/user-attachments/assets/1eb0ca52-af34-426d-b693-cba5d0a3dcdf" alt="Narrow Image" width="400" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+    <img src="./img/brats_label.png" alt="Narrow Image" width="400" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
   </div>
 </p>
 
@@ -75,7 +75,7 @@ ACDC is a cardiac organ segmentation MRI dataset(The metrics of `SegFormer3D` he
 <p align="center">
   <div style="position: relative; display: inline-block;">
     <img src="./img/ACDC.svg" alt="Wide Image" width="400" style="display: block;">
-    <img src="https://github.com/user-attachments/assets/028f9314-7344-4f61-bec8-9592a1064d1f" alt="Narrow Image" width="400" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+    <img src="./img/acdc_label.png" alt="Narrow Image" width="400" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
   </div>
 </p>
 
@@ -84,7 +84,7 @@ Synapse is a CT dataset for multi-organ segmentation in the abdomen
 <p align="center">
   <div style="position: relative; display: inline-block;">
     <img src="./img/Synapse.svg" alt="Wide Image" width="400" style="display: block;">
-    <img src="https://github.com/user-attachments/assets/2e276e44-c1a8-4498-b299-d22da4b32ce3" alt="Narrow Image" width="400" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+    <img src="./img/synapse_label.png" alt="Narrow Image" width="400" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
   </div>
 </p>
 
