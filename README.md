@@ -52,6 +52,7 @@ pip install -r requirements.txt
 ## 4. 训练
 
 运行`run_scripts`文件夹下的脚本即可，在后续推理中，您只需注释掉脚本中的`train`命令，启用`inference`命令即可。
+训练得到的结果会存储在`litesegformer3d`文件夹下的`output_xxx`文件夹中。
 
 ## 5. 评估
 
