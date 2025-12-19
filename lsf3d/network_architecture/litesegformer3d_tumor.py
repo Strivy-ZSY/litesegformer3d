@@ -323,7 +323,7 @@ class DynamicTanh(nn.Module):
 
 INNER_DIM = 64
 
-class Mona3DOp(nn.Module):
+class ANS3DOp(nn.Module):
     def __init__(self, channels):
         super().__init__()
         self.conv1 = nn.Conv3d(channels, channels, kernel_size=3, padding=1, bias=False)
@@ -342,7 +342,7 @@ class Mona3DOp(nn.Module):
         x = self.act2(x)
         return x
 
-class SimpleMona3D(nn.Module):
+class ANSFFN(nn.Module):
     def __init__(self, in_dim, factor=4):
         super().__init__()
 
@@ -352,7 +352,7 @@ class SimpleMona3D(nn.Module):
 
         self.dropout = nn.Dropout(p=0.1)
 
-        self.adapter_conv = Mona3DOp(INNER_DIM)
+        self.adapter_conv = ANS3DOp(INNER_DIM)
 
         self.norm = nn.LayerNorm(in_dim)
         # self.norm = DynamicTanh(normalized_shape=in_dim, alpha_init_value=True)
@@ -419,7 +419,7 @@ class TransformerBlock(nn.Module):
         )
         self.norm2 = DynamicTanh(normalized_shape=embed_dim, alpha_init_value=True)
         self.act_fn = nn.GELU()
-        self.smona3d = SimpleMona3D(embed_dim, 8)
+        self.ansffn = ANSFFN(embed_dim, 8)
 
     def forward(self, x):
         # 输入形状: (batch, patch_cube, hidden_size)
@@ -427,9 +427,8 @@ class TransformerBlock(nn.Module):
         h = w = cube_root(N)  # h=4, w=4
         hw_shape = (h, w)
         x = x + self.attention(self.norm1(x))  # 第一个残差连接
-        # x = self.mona1(x, hw_shape) #TEST
         x = x + self.act_fn(self.norm2(x))    # 第二个残差连接
-        x = self.smona3d(x, hw_shape)
+        x = self.ansffn(x, hw_shape)
         return x
 
 class LiteKANformer(nn.Module):
