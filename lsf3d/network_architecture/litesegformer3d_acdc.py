@@ -49,7 +49,7 @@ class LiteSegFormer3D(SegmentationNetwork):
         super().__init__()
         self.do_ds = do_ds
         self.num_classes = num_classes
-        self.segformer_encoder = MixVisionTransformer(
+        self.segformer_encoder = LiteKANformer(
             in_channels=in_channels,
             sr_ratios=sr_ratios,
             embed_dims=embed_dims,
@@ -413,7 +413,7 @@ class TransformerBlock(nn.Module):
         return x
 
 
-class MixVisionTransformer(nn.Module):
+class LiteKANformer(nn.Module):
     def __init__(
         self,
         in_channels: int = 4,
