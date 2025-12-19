@@ -49,7 +49,7 @@ class LiteSegFormer3D(SegmentationNetwork):
         super().__init__()
         self.do_ds = do_ds
         self.num_classes = num_classes
-        self.segformer_encoder = LiteKANformer(
+        self.litesegformer_encoder = LiteKANformer(
             in_channels=in_channels,
             sr_ratios=sr_ratios,
             embed_dims=embed_dims,
@@ -62,7 +62,7 @@ class LiteSegFormer3D(SegmentationNetwork):
         )
         # decoder takes in the feature maps in the reversed order
         reversed_embed_dims = embed_dims[::-1]
-        self.segformer_decoder = SegFormerDecoderHead(
+        self.litesegformer_decoder = DecoderHead(
             input_feature_dims=reversed_embed_dims,
             decoder_head_embedding_dim=decoder_head_embedding_dim,
             num_classes=num_classes,
@@ -100,17 +100,17 @@ class LiteSegFormer3D(SegmentationNetwork):
 
     def forward(self, x):
         # embedding the input
-        features = self.segformer_encoder(x)
+        features = self.litesegformer_encoder(x)
         c1, c2, c3, c4 = features
         # decoding the embedded features
-        x = self.segformer_decoder(c1, c2, c3, c4)
+        x = self.litesegformer_decoder(c1, c2, c3, c4)
 
         if self.do_ds:
             # Get deep supervision outputs
-            _c2 = self.segformer_decoder.linear_c2(c2).permute(0, 2, 1).reshape(x.shape[0], -1, c2.shape[2], c2.shape[3], c2.shape[4]).contiguous()
-            _c3 = self.segformer_decoder.linear_c3(c3).permute(0, 2, 1).reshape(x.shape[0], -1, c3.shape[2], c3.shape[3], c3.shape[4]).contiguous()
+            _c2 = self.litesegformer_decoder.linear_c2(c2).permute(0, 2, 1).reshape(x.shape[0], -1, c2.shape[2], c2.shape[3], c2.shape[4]).contiguous()
+            _c3 = self.litesegformer_decoder.linear_c3(c3).permute(0, 2, 1).reshape(x.shape[0], -1, c3.shape[2], c3.shape[3], c3.shape[4]).contiguous()
             
-            outputs = self.segformer_decoder.get_ds_outputs(x, _c2, _c3)
+            outputs = self.litesegformer_decoder.get_ds_outputs(x, _c2, _c3)
             return outputs
         else:
             return x
@@ -648,10 +648,7 @@ class AsymmetricConvBlock(nn.Module):
         out = self.act(out)
         return out
 
-class SegFormerDecoderHead(nn.Module):
-    """
-    SegFormer: Simple and Efficient Design for Semantic Segmentation with Transformers
-    """
+class DecoderHead(nn.Module):
 
     def __init__(
         self,
@@ -707,7 +704,6 @@ class SegFormerDecoderHead(nn.Module):
             decoder_head_embedding_dim, num_classes, kernel_size=1
         )
 
-        # segformer decoder generates the final decoded feature map size at 1/4 of the original input volume size
         # self.upsample_volume = nn.Upsample(
         #     scale_factor=4.0, mode="trilinear", align_corners=False
         # )
