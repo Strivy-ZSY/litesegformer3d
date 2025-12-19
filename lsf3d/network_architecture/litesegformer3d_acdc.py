@@ -204,7 +204,7 @@ class FastKANLayer_Att(nn.Module):
         ret = ret.view(original_shape[0], original_shape[1], original_shape[2], -1)  # (batch_size, seq_len, height, embed_dim)
         return ret
 
-class SelfAttention(nn.Module):
+class AGBLA(nn.Module):
     def __init__(
         self,
         embed_dim: int = 768,
@@ -392,7 +392,7 @@ class TransformerBlock(nn.Module):
         super().__init__()
         # 使用 DynamicTanh 替换 LayerNorm
         self.norm1 = DynamicTanh(normalized_shape=embed_dim, alpha_init_value=True)
-        self.attention = SelfAttention(
+        self.agbla = AGBLA(
             embed_dim=embed_dim,
             num_heads=num_heads,
             sr_ratio=sr_ratio,
@@ -407,7 +407,7 @@ class TransformerBlock(nn.Module):
     def forward(self, x, spatial_shape):
         # 输入形状: (batch, num_patches, hidden_size)
         # spatial_shape: (D, H, W)
-        x = x + self.attention(self.norm1(x), spatial_shape=spatial_shape)  # 第一个残差连接
+        x = x + self.agbla(self.norm1(x), spatial_shape=spatial_shape)  # 第一个残差连接
         x = x + self.act_fn(self.norm2(x))    # 第二个残差连接
         x = self.ansffn(x, spatial_shape=spatial_shape)
         return x
