@@ -311,7 +311,7 @@ class DynamicTanh(nn.Module):
 
 INNER_DIM = 64
 
-class Mona3DOp(nn.Module):
+class ANS3DOp(nn.Module):
     def __init__(self, channels):
         super().__init__()
         self.conv1 = nn.Conv3d(channels, channels, kernel_size=3, padding=1, bias=False)
@@ -330,7 +330,7 @@ class Mona3DOp(nn.Module):
         x = self.act2(x)
         return x
 
-class SimpleMona3D(nn.Module):
+class ANSFFN(nn.Module):
     def __init__(self, in_dim, factor=4):
         super().__init__()
 
@@ -340,7 +340,7 @@ class SimpleMona3D(nn.Module):
 
         self.dropout = nn.Dropout(p=0.1)
 
-        self.adapter_conv = Mona3DOp(INNER_DIM)
+        self.adapter_conv = ANS3DOp(INNER_DIM)
 
         self.norm = nn.LayerNorm(in_dim)
         # self.norm = DynamicTanh(normalized_shape=in_dim, alpha_init_value=True)
@@ -356,7 +356,7 @@ class SimpleMona3D(nn.Module):
 
 
         B, N, C = project1.shape
-        assert spatial_shape is not None, "spatial_shape must be provided for Mona forward!"
+        assert spatial_shape is not None, "spatial_shape must be provided for ANSFFN!"
         D, H, W = spatial_shape
         project1 = project1.reshape(B, D, H, W, C)
         project1 = project1.permute(0, 4, 1, 2, 3)  # (B, C, D, H, W)
@@ -402,12 +402,12 @@ class TransformerBlock(nn.Module):
         )
         self.norm2 = DynamicTanh(normalized_shape=embed_dim, alpha_init_value=True)
         self.act_fn = nn.GELU()
-        self.smona3d = SimpleMona3D(embed_dim, 8)
+        self.ansffn = ANSFFN(embed_dim, 8)
 
     def forward(self, x, spatial_shape):
         x = x + self.attention(self.norm1(x), spatial_shape=spatial_shape)
         x = x + self.act_fn(self.norm2(x))
-        x = self.smona3d(x, spatial_shape=spatial_shape)
+        x = self.ansffn(x, spatial_shape=spatial_shape)
         return x
 
 
