@@ -626,8 +626,7 @@ class RadialBasisFunction(nn.Module):
 
 ###################################################################################
 
-# ACNET
-class AsymmetricConvBlock(nn.Module):
+class ADCNet3D(nn.Module):
     def __init__(self, in_channels, out_channels):
         super().__init__()
         self.conv3x3 = nn.Conv3d(in_channels, out_channels, 3, padding=1, bias=False)
@@ -673,10 +672,10 @@ class DecoderHead(nn.Module):
             input_dim=input_feature_dims[3],
             embed_dim=decoder_head_embedding_dim,
         )
-        self.act_c2 = AsymmetricConvBlock(
+        self.act_c2 = ADCNet3D(
             input_feature_dims[2], 
             input_feature_dims[2])
-        self.act_c1 = AsymmetricConvBlock(
+        self.act_c1 = ADCNet3D(
             input_feature_dims[3], 
             input_feature_dims[3])
         self.linear_fuse = nn.Sequential(
