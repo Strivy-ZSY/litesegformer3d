@@ -3,7 +3,7 @@
 如果您想阅读中文版本，点击[这里](README.md)
 
 ## 1. Overview
-<img src="./img/LiteSegFormer3D.svg" />
+<img src="./img/LiteSegFormer3D.png" />
 
 We designed **LiteSegFormer3D**, a lightweight and efficient medical image segmentation network based on SegFormer3D. It improves segmentation accuracy while reducing training time by one-third to one-half across three datasets. By introducing novel feedforward processing to accelerate training, employing a Gaussian kernel attention mechanism to reduce parameter size while enhancing spatial texture fitting, and combining asymmetric convolutions for shallow feature extraction with dynamic normalization to speed up convergence, we achieve an efficient and accurate segmentation algorithm.
 
@@ -66,7 +66,7 @@ Additionally, you can refer to the [nnFormer](https://github.com/282857341/nnFor
 BraTS 2017 is an MRI dataset of brain tumors
 <p align="center">
   <div style="position: relative; display: inline-block;">
-    <img src="./img/BraTS.svg" alt="Wide Image" width="400" style="display: block;">
+    <img src="./img/BraTS.png" alt="Wide Image" width="400" style="display: block;">
     <img src="./img/brats_label.png" alt="Narrow Image" width="400" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
   </div>
 </p>
@@ -75,7 +75,7 @@ BraTS 2017 is an MRI dataset of brain tumors
 ACDC is a cardiac organ segmentation MRI dataset(The metrics of `SegFormer3D` here are obtained from our actual measurements.)
 <p align="center">
   <div style="position: relative; display: inline-block;">
-    <img src="./img/ACDC.svg" alt="Wide Image" width="400" style="display: block;">
+    <img src="./img/ACDC.png" alt="Wide Image" width="400" style="display: block;">
     <img src="./img/acdc_label.png" alt="Narrow Image" width="400" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
   </div>
 </p>
@@ -84,7 +84,7 @@ ACDC is a cardiac organ segmentation MRI dataset(The metrics of `SegFormer3D` he
 Synapse is a CT dataset for multi-organ segmentation in the abdomen
 <p align="center">
   <div style="position: relative; display: inline-block;">
-    <img src="./img/Synapse.svg" alt="Wide Image" width="400" style="display: block;">
+    <img src="./img/Synapse.png" alt="Wide Image" width="400" style="display: block;">
     <img src="./img/synapse_label.png" alt="Narrow Image" width="400" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
   </div>
 </p>
