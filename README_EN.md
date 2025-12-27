@@ -76,7 +76,7 @@ ACDC is a cardiac organ segmentation MRI dataset(The metrics of `SegFormer3D` he
 <p align="center">
   <div style="position: relative; display: inline-block;">
     <img src="./img/ACDC.png" alt="Wide Image" width="400" style="display: block;">
-    <img src="./img/acdc_label.png" alt="Narrow Image" width="400" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+    <img src="./img/acdc_label.png" alt="Narrow Image" width="200" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
   </div>
 </p>
 
