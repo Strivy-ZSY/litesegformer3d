@@ -660,11 +660,10 @@ class ADCNet3D(nn.Module):
         self.conv3x3x3 = nn.Conv3d(in_channels, out_channels, 3, padding=1, bias=False)
         self.conv1x3x1 = nn.Conv3d(in_channels, out_channels, (1, 3, 1), padding=(0, 1, 0), bias=False)
         self.conv3x1x1 = nn.Conv3d(in_channels, out_channels, (3, 1, 1), padding=(1, 0, 0), bias=False)
-        #self.conv1x1x3 = nn.Conv3d(in_channels, out_channels, (1, 1, 3), padding=(0, 0, 1), bias=False)
         self.bn = nn.BatchNorm3d(out_channels)
         self.act = nn.GELU()
     def forward(self, x):
-        out = self.conv3x3x3(x) + self.conv1x3x1(x) + self.conv3x1x1(x) #+ self.conv1x1x3(x)
+        out = self.conv3x3x3(x) + self.conv1x3x1(x) + self.conv3x1x1(x)
         out = self.bn(out)
         out = self.act(out)
         return out
