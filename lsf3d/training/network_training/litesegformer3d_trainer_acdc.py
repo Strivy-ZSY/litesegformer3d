@@ -160,7 +160,7 @@ class litesegformer3d_trainer_acdc(Trainer_acdc):
         self.was_initialized = True
 
     def initialize_network(self):
-        """Initialize the SegFormer3D network"""
+        """Initialize the LiteSegFormer3D network"""
         # 初始化网络
         self.network = LiteSegFormer3D(
             in_channels=self.input_channels,
