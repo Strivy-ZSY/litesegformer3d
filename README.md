@@ -1,4 +1,4 @@
-# LiteSegFormer3D：一种高效轻量的三维医学图像分割模型
+# 融合高斯映射与自适应前馈的轻量医学图像分割
 
 If you would like to view the English version, click [here](README_EN.md)
 
