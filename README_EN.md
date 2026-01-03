@@ -1,4 +1,4 @@
-# LiteSegFormer3D: An Efficient and Lightweight Segmentation Model for 3D Medical Images
+# Lightweight Medical Image Segmentation Incorporating Gaussian Mapping and Adaptive Feedforward
 
 如果您想阅读中文版本，点击[这里](README.md)
 
