@@ -62,11 +62,7 @@ The `lsf3d/inferencedata` folder contains our evaluation results and the corresp
 To evaluate the code execution instructions, you can refer to the [inference.txt](https://github.com/Strivy-ZSY/litesegformer3d/blob/main/lsf3d/inferencedata/inference.txt) file.
 Additionally, you can refer to the [nnFormer](https://github.com/282857341/nnFormer/blob/main/nnformer/dataset_json/) partitioning method for the specific division of the **test set**. You will also need to modify the value of `splits[self.fold]['val']` in the corresponding `litesegformer3d_tranier_xxx.py` file within the [training code](https://github.com/Strivy-ZSY/litesegformer3d/tree/main/lsf3d/training/network_training) to the list of test sets.
 
-**Note**: For your convenience, we have provided our best weights from training and the weights from the last epoch. You can directly place them in the following path for testing: 
-```
-litesegformer3d/output_xxx/litesegformer3d/3d_fullres/Task001_XXX/litesegformer3d_trainer_xxx__litesegformer3d_Plansv2.1/fold_0/
-```
-Our weight files are located in the `litesegformer3d/model` folder 🙂
+
 
 ### 5.1 BraTS 2017
 BraTS 2017 is an MRI dataset of brain tumors
