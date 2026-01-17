@@ -64,12 +64,11 @@ pip install -r requirements.txt
 
 ```
 litesegformer3d/output_tumor/litesegformer3d/3d_fullres/Task003_tumor/litesegformer3d_trainer_tumor__litesegformer3d_Plansv2.1/fold_0/
-
 litesegformer3d/output_acdc/litesegformer3d/3d_fullres/Task001_ACDC/litesegformer3d_trainer_acdc__litesegformer3d_Plansv2.1/fold_0/
-
 litesegformer3d/output_synapse/litesegformer3d/3d_fullres/Task002_Synapse/litesegformer3d_trainer_synapse__litesegformer3d_Plansv2.1/fold_0/
 ```
 
+如果您只是想可视化查看我们的权重效果，我们提供了对应的GUI程序，详见仓库[litesegformer3d_gui](https://github.com/Strivy-ZSY/litesegformer3d_gui)
 
 
 ### 5.1 BraTS 2017
