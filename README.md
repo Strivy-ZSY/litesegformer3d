@@ -60,6 +60,16 @@ pip install -r requirements.txt
 评估代码运行的指令您可以查看[inference.txt](https://github.com/Strivy-ZSY/litesegformer3d/blob/main/lsf3d/inferencedata/inference.txt)文件。
 同时，**测试集**的具体划分您可以参照[nnFormer](https://github.com/282857341/nnFormer/blob/main/nnformer/dataset_json/)的划分方式,同时您需要修改[训练代码](https://github.com/Strivy-ZSY/litesegformer3d/tree/main/lsf3d/training/network_training)中对应的`litesegformer3d_tranier_xxx.py`文件中的`splits[self.fold]['val']`的值为对应的测试集列表。
 
+**补充**：为方便您直接使用，我们提供了我们的训练时最佳的权重和最后一轮的权重，您可以从[此处](https://drive.google.com/file/d/18KWXc6vKML5037wf34YJnpP31lvMUWoy/view?usp=sharing)下载，将其直接放在以下路径中，启用`run_scripts`文件夹下的脚本自行推理（记得在脚本中切换训练和推理🙂）：
+
+```
+litesegformer3d/output_tumor/litesegformer3d/3d_fullres/Task003_tumor/litesegformer3d_trainer_tumor__litesegformer3d_Plansv2.1/fold_0/
+
+litesegformer3d/output_acdc/litesegformer3d/3d_fullres/Task001_ACDC/litesegformer3d_trainer_acdc__litesegformer3d_Plansv2.1/fold_0/
+
+litesegformer3d/output_synapse/litesegformer3d/3d_fullres/Task002_Synapse/litesegformer3d_trainer_synapse__litesegformer3d_Plansv2.1/fold_0/
+```
+
 
 
 ### 5.1 BraTS 2017
