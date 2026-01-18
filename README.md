@@ -72,7 +72,7 @@ litesegformer3d/output_synapse/litesegformer3d/3d_fullres/Task002_Synapse/litese
 
 
 ### 5.1 BraTS 2017
-BraTS 2017是大脑脑瘤MRI数据集
+BraTS 2017是大脑脑瘤MRI数据集，其包含四种模态
 <p align="center">
   <div style="position: relative; display: inline-block;">
     <img src="./img/BraTS.png" alt="Wide Image" width="400" style="display: block;">
