@@ -72,7 +72,7 @@ litesegformer3d/output_synapse/litesegformer3d/3d_fullres/Task002_Synapse/litese
 If you only want to visually check the effects of our weights, we provide a corresponding GUI program. For details, please refer to the repository [litesegformer3d_gui](https://github.com/Strivy-ZSY/litesegformer3d_gui)
 
 ### 5.1 BraTS 2017
-BraTS 2017 is an MRI dataset of brain tumors
+BraTS 2017 is a brain tumor MRI dataset, which includes four modalities.
 <p align="center">
   <div style="position: relative; display: inline-block;">
     <img src="./img/BraTS.png" alt="Wide Image" width="400" style="display: block;">
