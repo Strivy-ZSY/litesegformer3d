@@ -744,20 +744,3 @@ class DecoderHead(nn.Module):
         x3 = torch.nn.functional.interpolate(x3, size=(16, 160, 160), mode="trilinear", align_corners=False)
         
         return [x1, x2, x3]
-
-###################################################################################
-if __name__ == "__main__":
-    start = time.time()
-    input = torch.randint(
-        low=0,
-        high=255,
-        size=(1, 4, 16, 160, 160),
-        dtype=torch.float,
-    )
-    input = input.to("cuda:0")
-    litesegformer3D = LiteSegFormer3D().to("cuda:0")
-    output = litesegformer3D(input)
-    print(output.shape)
-    end = time.time()
-    mystr="run time: %d ms" % ( (end-start) * 1000)
-    print(mystr)
