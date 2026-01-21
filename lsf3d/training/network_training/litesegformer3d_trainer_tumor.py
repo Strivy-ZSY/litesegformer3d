@@ -510,12 +510,6 @@ class litesegformer3d_trainer_tumor(Trainer_tumor):
        'BRATS_448', 'BRATS_456', 'BRATS_461', 'BRATS_462', 'BRATS_465',
        'BRATS_471', 'BRATS_473', 'BRATS_474', 'BRATS_476', 'BRATS_479',
        'BRATS_480', 'BRATS_484'])
-    #         splits[self.fold]['val'] = np.array([
-    #    'BRATS_058', 'BRATS_059', 'BRATS_076', 'BRATS_077', 'BRATS_099',
-    #    'BRATS_113', 'BRATS_114', 'BRATS_124', 'BRATS_139', 'BRATS_151',
-    #    'BRATS_152', 'BRATS_157', 'BRATS_190', 'BRATS_240', 'BRATS_242',
-    #    'BRATS_295', 'BRATS_305', 'BRATS_325', 'BRATS_331', 'BRATS_362',
-    #    'BRATS_389', 'BRATS_425', 'BRATS_432', 'BRATS_450'])
 
             splits[self.fold]['val']=np.array([
        'BRATS_011', 'BRATS_012', 'BRATS_018', 'BRATS_020', 'BRATS_021',
