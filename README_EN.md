@@ -62,14 +62,6 @@ The `lsf3d/inferencedata` folder contains our evaluation results and the corresp
 To evaluate the code execution instructions, you can refer to the [inference.txt](https://github.com/Strivy-ZSY/litesegformer3d/blob/main/lsf3d/inferencedata/inference.txt) file.
 Additionally, you can refer to the [nnFormer](https://github.com/282857341/nnFormer/blob/main/nnformer/dataset_json/) partitioning method for the specific division of the **test set**. You will also need to modify the value of `splits[self.fold]['val']` in the corresponding `litesegformer3d_tranier_xxx.py` file within the [training code](https://github.com/Strivy-ZSY/litesegformer3d/tree/main/lsf3d/training/network_training) to the list of test sets.
 
-**Note**: For your convenience, we provide our best weights from training and the weights from the final epoch. You can download them from [here](https://drive.google.com/file/d/18KWXc6vKML5037wf34YJnpP31lvMUWoy/view?usp=sharing) and place them directly in the following paths. Then, enable the scripts under the `run_scripts` folder for inference (remember to switch between training and inference in the scripts🙂):  
-```  
-litesegformer3d/output_tumor/litesegformer3d/3d_fullres/Task003_tumor/litesegformer3d_trainer_tumor__litesegformer3d_Plansv2.1/fold_0/  
-litesegformer3d/output_acdc/litesegformer3d/3d_fullres/Task001_ACDC/litesegformer3d_trainer_acdc__litesegformer3d_Plansv2.1/fold_0/  
-litesegformer3d/output_synapse/litesegformer3d/3d_fullres/Task002_Synapse/litesegformer3d_trainer_synapse__litesegformer3d_Plansv2.1/fold_0/  
-```
-
-If you only want to visually check the effects of our weights, we provide a corresponding GUI program. For details, please refer to the repository [litesegformer3d_gui](https://github.com/Strivy-ZSY/litesegformer3d_gui)
 
 ### 5.1 BraTS 2017
 BraTS 2017 is a brain tumor MRI dataset, which includes four modalities.
