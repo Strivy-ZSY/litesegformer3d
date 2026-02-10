@@ -117,7 +117,6 @@ def test(fold):
     avg_hd.append(np.mean(hd_rv))
     avg_hd.append(np.mean(hd_myo))
     avg_hd.append(np.mean(hd_lv))
-    fw.write('avg_hd:'+str(np.mean(avg_hd))+'\n')
 
     fw.write('DSC:'+str(np.mean(dsc))+'\n')
     fw.write('HD:'+str(np.mean(avg_hd))+'\n')
@@ -130,3 +129,4 @@ if __name__ == '__main__':
     args = parser.parse_args()
     fold = args.fold
     test(fold)
+
