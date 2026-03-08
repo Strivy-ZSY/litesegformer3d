@@ -327,10 +327,10 @@ class ANS3DOp(nn.Module):
     def __init__(self, channels):
         super().__init__()
         self.conv1 = nn.Conv3d(channels, channels, kernel_size=3, padding=1, bias=False)
-        self.norm1 = nn.BatchNorm3d(channels)
+        self.norm1 = nn.GroupNorm(4, channels)
         self.act1 = nn.GELU()
         self.conv2 = nn.Conv3d(channels, channels, kernel_size=3, padding=1, bias=False)
-        self.norm2 = nn.BatchNorm3d(channels)
+        self.norm2 = nn.GroupNorm(2, channels)
         self.act2 = nn.GELU()
     def forward(self, x):
         # 输入形状: (batch_size, channels, depth, height, width)
