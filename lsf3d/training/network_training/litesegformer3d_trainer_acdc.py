@@ -205,7 +205,6 @@ class litesegformer3d_trainer_acdc(Trainer_acdc):
         We need to wrap this because we need to enforce self.network.do_ds = False for prediction
         """
 
-
         ds = self.network.do_ds
         self.network.do_ds = False
         ret = super().validate(do_mirroring=do_mirroring, use_sliding_window=use_sliding_window, step_size=step_size,
