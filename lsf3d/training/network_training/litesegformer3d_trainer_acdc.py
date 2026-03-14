@@ -181,30 +181,6 @@ class litesegformer3d_trainer_acdc(Trainer_acdc):
 
         if torch.cuda.is_available():
             self.network.cuda()
-        
-        # 设置softmax helper
-        self.network.inference_apply_nonlin = softmax_helper
-
-        # 计算网络统计信息
-        n_parameters = sum(p.numel() for p in self.network.parameters() if p.requires_grad)
-        input_shape = (1, self.input_channels, 16, 160, 160)
-        input = torch.ones(input_shape, dtype=next(self.network.parameters()).dtype,
-                        device=next(self.network.parameters()).device)
-        flops = FlopCountAnalysis(self.network, input)
-        model_flops = flops.total()
-        print(f"MAdds: {round(model_flops * 1e-9, 2)} G")
-
-        # 计算网络统计信息
-        n_parameters = sum(p.numel() for p in self.network.parameters() if p.requires_grad)
-        input_shape = (self.input_channels, 16, 160, 160)  # 去掉 batch_size 维度
-
-        # FLOPs 计算保持不变
-        input = torch.ones((1, self.input_channels, 16, 160, 160), 
-                        dtype=next(self.network.parameters()).dtype,
-                        device=next(self.network.parameters()).device)
-        flops = FlopCountAnalysis(self.network, input)
-        model_flops = flops.total()
-        print(f"MAdds: {round(model_flops * 1e-9, 2)} G")
 
     def initialize_optimizer_and_scheduler(self):
         assert self.network is not None, "self.initialize_network must be called first"
