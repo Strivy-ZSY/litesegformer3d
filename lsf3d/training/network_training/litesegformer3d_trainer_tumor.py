@@ -195,14 +195,6 @@ class litesegformer3d_trainer_tumor(Trainer_tumor):
         if torch.cuda.is_available():
             self.network.cuda()
         self.network.inference_apply_nonlin = softmax_helper
-        # Print the network parameters & Flops
-        n_parameters = sum(p.numel() for p in self.network.parameters() if p.requires_grad)
-        input_res = (4, 128, 128, 128)
-        input = torch.ones(()).new_empty((1, *input_res), dtype=next(self.network.parameters()).dtype,
-                                         device=next(self.network.parameters()).device)
-        flops = FlopCountAnalysis(self.network, input)
-        model_flops = flops.total()
-        print(f"MAdds: {round(model_flops * 1e-9, 2)} G")
 
     def initialize_optimizer_and_scheduler(self):
         assert self.network is not None, "self.initialize_network must be called first"
