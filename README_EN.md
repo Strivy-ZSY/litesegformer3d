@@ -5,7 +5,9 @@
 ## 1. Overview
 <img src="./img/LiteSegFormer3D.png" />
 
-We designed **LiteSegFormer3D**, a lightweight and efficient medical image segmentation network based on SegFormer3D. It improves segmentation accuracy while reducing training time by one-third to one-half across three datasets. By introducing novel feedforward processing to accelerate training, employing a Gaussian kernel attention mechanism to reduce parameter size while enhancing spatial texture fitting, and combining asymmetric convolutions for shallow feature extraction with dynamic normalization to speed up convergence, we achieve an efficient and accurate segmentation algorithm.
+Building on SegFormer3D, we have designed a lightweight and efficient medical image segmentation network, **LiteSegFormer3D**, which improves segmentation accuracy while reducing training time by one-third to one-half across three datasets. By introducing a novel feedforward processing method to accelerate training, employing a Gaussian kernel-based attention mechanism to reduce the parameter size and enhance spatial texture fitting, and combining asymmetric convolutions to compensate for shallow-layer features with pyramid-based supervision to accelerate convergence, we have achieved an efficient and accurate segmentation algorithm.
+
+Translated with DeepL.com (free version)
 
 ## 2. Installation
 
