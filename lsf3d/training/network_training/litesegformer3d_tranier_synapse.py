@@ -32,6 +32,7 @@ from sklearn.model_selection import KFold
 from torch import nn
 from torch.cuda.amp import autocast
 from lsf3d.training.learning_rate.poly_lr import poly_lr
+from lsf3d.training.trainable_params_format.py import format_params
 from batchgenerators.utilities.file_and_folder_operations import *
 from lsf3d.network_architecture.litesegformer3d_synapse import LiteSegFormer3D
 from fvcore.nn import FlopCountAnalysis
@@ -186,6 +187,23 @@ class litesegformer3d_trainer_synapse(Trainer_synapse):
         if torch.cuda.is_available():
             self.network.cuda()
         self.network.inference_apply_nonlin = softmax_helper
+        input_res = (self.input_channels, 64, 128, 128)
+
+        from torchsummary import summary
+        import sys
+        from io import StringIO
+        old_stdout = sys.stdout
+        sys.stdout = mystdout = StringIO()
+        
+        summary(self.network, input_size = input_res, device='cuda' if torch.cuda.is_available() else 'cpu')
+
+        sys.stdout = old_stdout
+        output = mystdout.getvalue()
+        lines = output.strip().split('\n')
+
+        line = lines[-3:-2][0]
+        # print(line)
+        print(format_params(line))
 
     def initialize_optimizer_and_scheduler(self):
         assert self.network is not None, "self.initialize_network must be called first"
