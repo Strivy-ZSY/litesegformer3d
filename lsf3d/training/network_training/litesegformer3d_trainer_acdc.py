@@ -183,6 +183,8 @@ class litesegformer3d_trainer_acdc(Trainer_acdc):
         if torch.cuda.is_available():
             self.network.cuda()
         input_res = (self.input_channels, 16, 160, 160)
+        self.network.inference_apply_nonlin = softmax_helper
+
         from torchsummary import summary
         import sys
         from io import StringIO
