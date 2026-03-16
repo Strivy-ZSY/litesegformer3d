@@ -196,7 +196,7 @@ class litesegformer3d_trainer_tumor(Trainer_tumor):
         if torch.cuda.is_available():
             self.network.cuda()
         # self.network.inference_apply_nonlin = softmax_helper
-        input_res = (4, 128, 128, 128)
+        input_res = (self.input_channels, 128, 128, 128)
         from torchsummary import summary
         import sys
         from io import StringIO
