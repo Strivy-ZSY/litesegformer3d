@@ -32,7 +32,7 @@ from sklearn.model_selection import KFold
 from torch import nn
 from torch.cuda.amp import autocast
 from lsf3d.training.learning_rate.poly_lr import poly_lr
-from lsf3d.training.trainable_params_format.py import format_params
+from lsf3d.training.trainable_params_format import format_params
 from batchgenerators.utilities.file_and_folder_operations import *
 from lsf3d.network_architecture.litesegformer3d_acdc import LiteSegFormer3D
 from fvcore.nn import FlopCountAnalysis
