@@ -31,7 +31,7 @@ pip install -r requirements.txt
 
 ## 3. 数据集
 我们使用的数据分别是[BraTS](https://www.med.upenn.edu/sbia/brats2017/data.html)、[Synapse](https://www.synapse.org/#!Synapse:syn3193805/wiki/217789)和[ACDC](https://www.creatis.insa-lyon.fr/Challenge/acdc/databases.html)
-您可以参照[nnFormer](https://github.com/282857341/nnFormer)中数据的预处理方式，或者您也可以直接下载预处理好的数据[DATASET](https://sourceforge.net/projects/litesegformer3d/files/)(我们推荐您这样做，可以节省很多时间🙂)。
+您可以参照[nnUNet](https://github.com/MIC-DKFZ/nnUNet)中数据的预处理方式，或者您也可以直接下载预处理好的数据[DATASET](https://sourceforge.net/projects/litesegformer3d/files/)(我们推荐您这样做，可以节省很多时间🙂)。
 
 将您下载的结果存放在`litesegformer3d`文件夹下，以`BraTS`数据集为例，文件夹结构划分如下：
 ```
@@ -58,7 +58,6 @@ pip install -r requirements.txt
 
 `lsf3d/inferencedata`文件夹下是我们的评估结果和对应的推理得到的测试集结果，如果您想自行推理得到对应的测试结果，请修改`lsf3d`文件夹下的`inference_xxx.py`的测试路径为您的推理测试集存放路径。
 评估代码运行的指令您可以查看[inference.txt](https://github.com/Strivy-ZSY/litesegformer3d/blob/main/lsf3d/inferencedata/inference.txt)文件。
-同时，**测试集**的具体划分您可以参照[nnFormer](https://github.com/282857341/nnFormer/blob/main/nnformer/dataset_json/)的划分方式,同时您需要修改[训练代码](https://github.com/Strivy-ZSY/litesegformer3d/tree/main/lsf3d/training/network_training)中对应的`litesegformer3d_tranier_xxx.py`文件中的`splits[self.fold]['val']`的值为对应的测试集列表。
 
 ### 5.1 BraTS 2017
 BraTS 2017是大脑脑瘤MRI数据集，其包含四种模态
@@ -89,7 +88,7 @@ Synapse是腹部多器官分割CT数据集
 
 ## 6. 致谢
 
-我们的实现基于[PyTorch](https://github.com/pytorch/pytorch)框架，数据集预处理参考了[nnFormer](https://github.com/282857341/nnFormer)和[UNETR++](https://github.com/Amshaker/unetr_plus_plus)的工作，代码构建参考了[nnUNet](https://github.com/MIC-DKFZ/nnUNet)、[FastKAN](https://github.com/ZiyaoLi/fast-kan)、[ACNet](https://github.com/DingXiaoH/ACNet)和[Mona](https://github.com/LeiyiHU/mona)的工作，基线模型实现参考了[SegFormer3D](https://github.com/OSUPCVLab/SegFormer3D)的工作。
+我们的实现基于[PyTorch](https://github.com/pytorch/pytorch)框架，数据集预处理参考了[nnUNet](https://github.com/MIC-DKFZ/nnUNet)的工作，代码构建参考了[nnUNet](https://github.com/MIC-DKFZ/nnUNet)、[FastKAN](https://github.com/ZiyaoLi/fast-kan)、[ACNet](https://github.com/DingXiaoH/ACNet)和[Mona](https://github.com/LeiyiHU/mona)的工作，基线模型实现参考了[SegFormer3D](https://github.com/OSUPCVLab/SegFormer3D)的工作。
 此外，我们编写Readme文件时参考了[TiM4Rec](https://github.com/AlwaysFHao/TiM4Rec)的工作。
 
 ## 7. 引用
