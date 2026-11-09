@@ -1,4 +1,11 @@
-# 融合高斯映射与自适应前馈的轻量医学图像分割
+# [融合高斯映射与自适应前馈的轻量医学图像分割](https://www.aas.net.cn/cn/article/doi/10.16383/j.aas.c260191?viewType=HTML)
+
+<p align="center">
+  <a href="https://github.com/Strivy-ZSY/litesegformer3d"><img alt="stars" src="https://img.shields.io/github/stars/Strivy-ZSY/litesegformer3d?style=social"></a>
+  <a href="https://github.com/Strivy-ZSY/litesegformer3d/blob/main/LICENSE"><img alt="license" src="https://img.shields.io/github/license/Strivy-ZSY/litesegformer3d?color=orange"></a>
+  <a href="https://github.com/Strivy-ZSY/litesegformer3d"><img alt="repo size" src="https://img.shields.io/github/repo-size/Strivy-ZSY/litesegformer3d"></a>
+  <a href="https://github.com/Strivy-ZSY/litesegformer3d/issues"><img alt="issues" src="https://img.shields.io/github/issues/Strivy-ZSY/litesegformer3d"></a>
+</p>
 
 If you would like to view the English version, click [here](README_EN.md)
 
@@ -31,9 +38,9 @@ pip install -r requirements.txt
 
 ## 3. 数据集
 我们使用的数据分别是[BraTS](https://www.med.upenn.edu/sbia/brats2017/data.html)、[Synapse](https://www.synapse.org/#!Synapse:syn3193805/wiki/217789)和[ACDC](https://www.creatis.insa-lyon.fr/Challenge/acdc/databases.html)
-您可以参照[nnUNet](https://github.com/MIC-DKFZ/nnUNet)中数据的预处理方式，或者您也可以直接下载预处理好的数据[DATASET](https://sourceforge.net/projects/litesegformer3d/files/)(我们推荐您这样做，可以节省很多时间🙂)。
+您可以参照[nnUNet](https://github.com/MIC-DKFZ/nnUNet)中数据的预处理方式
 
-将您下载的结果存放在`litesegformer3d`文件夹下，以`BraTS`数据集为例，文件夹结构划分如下：
+将您预处理好的数据存放在`litesegformer3d`文件夹下，以`BraTS`数据集为例，文件夹结构划分如下：
 ```
 ./DATASET_Tumor/
   ├── litesegformer3d_raw/
@@ -90,6 +97,3 @@ Synapse是腹部多器官分割CT数据集
 
 我们的实现基于[PyTorch](https://github.com/pytorch/pytorch)框架，数据集预处理参考了[nnUNet](https://github.com/MIC-DKFZ/nnUNet)的工作，代码构建参考了[nnUNet](https://github.com/MIC-DKFZ/nnUNet)、[FastKAN](https://github.com/ZiyaoLi/fast-kan)、[ACNet](https://github.com/DingXiaoH/ACNet)和[Mona](https://github.com/LeiyiHU/mona)的工作，基线模型实现参考了[SegFormer3D](https://github.com/OSUPCVLab/SegFormer3D)的工作。
 此外，我们编写Readme文件时参考了[TiM4Rec](https://github.com/AlwaysFHao/TiM4Rec)的工作。
-
-## 7. 引用
-专家审稿中，后续提供🙂
