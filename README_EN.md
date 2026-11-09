@@ -1,4 +1,11 @@
-# Lightweight Medical Image Segmentation Incorporating Gaussian Mapping and Adaptive Feedforward
+# [Lightweight Medical Image Segmentation Incorporating Gaussian Mapping and Adaptive Feedforward](https://www.aas.net.cn/cn/article/doi/10.16383/j.aas.c260191?viewType=HTML)
+
+<p align="center">
+  <a href="https://github.com/Strivy-ZSY/litesegformer3d"><img alt="stars" src="https://img.shields.io/github/stars/Strivy-ZSY/litesegformer3d?style=social"></a>
+  <a href="https://github.com/Strivy-ZSY/litesegformer3d/blob/main/LICENSE"><img alt="license" src="https://img.shields.io/github/license/Strivy-ZSY/litesegformer3d?color=orange"></a>
+  <a href="https://github.com/Strivy-ZSY/litesegformer3d"><img alt="repo size" src="https://img.shields.io/github/repo-size/Strivy-ZSY/litesegformer3d"></a>
+  <a href="https://github.com/Strivy-ZSY/litesegformer3d/issues"><img alt="issues" src="https://img.shields.io/github/issues/Strivy-ZSY/litesegformer3d"></a>
+</p>
 
 如果您想阅读中文版本，点击[这里](README.md)
 
@@ -34,9 +41,9 @@ pip install -r requirements.txt
 
 ## 3. Dataset
 
-The datasets we use are [BraTS](https://www.med.upenn.edu/sbia/brats2017/data.html), [Synapse](https://www.synapse.org/#!Synapse:syn3193805/wiki/217789), and [ACDC](https://www.creatis.insa-lyon.fr/Challenge/acdc/databases.html). You can refer to the data preprocessing method in [nnUNet](https://github.com/MIC-DKFZ/nnUNet), or you can directly download the preprocessed data from [DATASET](https://sourceforge.net/projects/litesegformer3d/files/)(We recommend doing so to save a lot of time 🙂).
+The datasets we use are [BraTS](https://www.med.upenn.edu/sbia/brats2017/data.html), [Synapse](https://www.synapse.org/#!Synapse:syn3193805/wiki/217789), and [ACDC](https://www.creatis.insa-lyon.fr/Challenge/acdc/databases.html). You can refer to the data preprocessing method in [nnUNet](https://github.com/MIC-DKFZ/nnUNet).
 
-Save your downloaded results in the `litesegformer3d` folder. Using the `BraTS` dataset as an example, the folder structure is organized as follows:
+Save your preprocessed data in the `litesegformer3d` folder. Using the `BraTS` dataset as an example, the folder structure is organized as follows:
 
 ```
 ./DATASET_Tumor/
@@ -94,6 +101,3 @@ Synapse is a CT dataset for multi-organ segmentation in the abdomen
 ## 6. Acknowledgments
 
 Our implementation is based on the [PyTorch](https://github.com/pytorch/pytorch) framework. For dataset preprocessing, we drew inspiration from the work of [nnUNet](https://github.com/MIC-DKFZ/nnUNet). For code construction, we referenced the work of [nnUNet](https://github.com/MIC-DKFZ/nnUNet), [FastKAN](https://github.com/ZiyaoLi/fast-kan), [ACNet](https://github.com/DingXiaoH/ACNet), and [Mona](https://github.com/LeiyiHU/mona). The baseline model implementation was inspired by [SegFormer3D](https://github.com/OSUPCVLab/SegFormer3D). Additionally, we referenced the work of [TiM4Rec](https://github.com/AlwaysFHao/TiM4Rec) when writing the Readme file.
-
-## 7. Citation
-Expert review in progress, to be provided subsequently🙂.
